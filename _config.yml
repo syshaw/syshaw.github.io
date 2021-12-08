@@ -19,10 +19,10 @@ feed:
   path: atom.xml
 
 user:
-  name: Syshaw
+  name: syshaw
   pic: /assets/img/profile.png
   picAlt: "syshaw"
-  job: 业余码农...
+  job: 业余码农
   message: 夢よ，さよなら
   aboutme: true
 
