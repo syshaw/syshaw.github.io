@@ -1,35 +1,34 @@
 
-title: Catbook #Your awesome title
-email: #youremail@domain.com
-description: > # this means to ignore newlines until "baseurl"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Chansey
+email: kimjanbyeol@gmail.com 
+description: stargazer
 
-baseurl: # the subpath of the site
-url: http://starry99.github.io/catbook # the base hostname & protocol for your site
+# the subpath of the site
+# baseurl:  
+url: https://starry99.github.io
 
 permalink: /:year-:month/:title
-timezone:
+timezone: Asia/Seoul
 
 favicon: /assets/img/favicon.ico
 
-google_analytics: #UA—XXXXXXXX-X
-disqus_shortname: #disqus shortname
-cusdis:
-    app_id: #your cusdis app_id
+google_analytics: UA-135755815-2
+disqus_shortname: starry99
+
+feed:
+  path: atom.xml
 
 user:
-  name: Catbook
-  pic: /assets/img/cat.jpg
-  picAlt: "catbook"
-  job: a category-centric theme
-  aboutme: true # comment this out if you don't need the 'about' page.
+  name: Chansey
+  pic: /assets/img/chansey.png
+  picAlt: "chansey"
+  job: do the next right thing
 
 exclude:
   - README.md
   - LICENSE
   - github
+  - .jekyll-cache
 
 defaults:
   - scope:
@@ -37,10 +36,10 @@ defaults:
       type: posts
     values:
       layout: post
-      comment: true   
+      comment: true    
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-markdown: kramdown 
+markdown: kramdown
 
 # Filtering Content
 show_drafts: null
