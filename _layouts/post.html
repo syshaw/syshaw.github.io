@@ -10,7 +10,7 @@ layout: page
   </div>
   <div class="post_data">
     {% if page.date %}
-    <span class="post_date">{{ page.date | date: "%b %-d, %Y" }}</span>
+    <span class="post_date">{{ page.date | date: "%Y-%m-%d %H:%M:%S" }}</span>
     {% endif %}
     {% if page.categories %}
     <span class="post_categories">
@@ -21,7 +21,7 @@ layout: page
     {% endif %}
     <span class="post_last">
     {% if page.last_edited %}
-    (Last edited: {{ page.last_edited | date: "%b %-d, %Y" }})
+    (Last edited: {{ page.last_edited | date: "%Y-%m-%d %H:%M:%S" }})
     {% endif %}
     </span>
   </div>

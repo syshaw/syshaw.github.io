@@ -1,3 +1,3 @@
-## Blog
+## My Blog
 
-My very own blog (in Korean)
+recording every moment in my life

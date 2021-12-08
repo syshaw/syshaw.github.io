@@ -1,16 +1,19 @@
 
 title: Syshaw
 email: 921543103@qq.com 
-description: 躺平主义者...
+description: 躺平主义者
 
 # the subpath of the site
 # baseurl:  
 url: https://syshaw.github.io
 
-permalink: /:year-:month/:title
+permalink: /:year-:month-:day/:title
 timezone: Asia/Beijing
 
 favicon: /assets/img/favicon.ico
+
+google_analytics: UA-135755815-2
+disqus_shortname: starry99
 
 feed:
   path: atom.xml
@@ -20,6 +23,7 @@ user:
   pic: /assets/img/profile.png
   picAlt: "syshaw"
   job: 业余码农...
+  message: 夢よ，さよなら
 
 exclude:
   - README.md
