@@ -1,34 +1,30 @@
 
-title: Chansey
-email: kimjanbyeol@gmail.com 
-description: stargazer
+title: Syshaw
+email: 921543103@qq.com 
+description: 躺平主义者...
 
 # the subpath of the site
 # baseurl:  
-url: https://starry99.github.io
+url: https://syshaw.github.io
 
 permalink: /:year-:month/:title
-timezone: Asia/Seoul
+timezone: Asia/Beijing
 
 favicon: /assets/img/favicon.ico
-
-google_analytics: UA-135755815-2
-disqus_shortname: starry99
 
 feed:
   path: atom.xml
 
 user:
-  name: Chansey
-  pic: /assets/img/chansey.png
-  picAlt: "chansey"
-  job: do the next right thing
+  name: Syshaw
+  pic: /assets/img/profile.png
+  picAlt: "syshaw"
+  job: 业余码农...
 
 exclude:
   - README.md
   - LICENSE
   - github
-  - .jekyll-cache
 
 defaults:
   - scope:
