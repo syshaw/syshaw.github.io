@@ -20,13 +20,12 @@ var drawinput = function(t) {
 	c.step ? c.step-- : (c.step = o, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]),
 		  c.prefixP++) : "forward" === c.direction ? c.skillP < r.length ? (c.text += r[c.skillP], c.skillP++) :
 		c.delay ? c.delay-- : (c.direction = "backward", c.delay = g) : c.skillP > 0 ? (c.text = c.text.slice(
-		  0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % a.length, c.direction = "forward")), t.textContent =
-	  c.text, t.appendChild(n(c.prefixP < l.length ? Math.min(b, b + c.prefixP) : Math.min(b, r.length -
+		  0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % a.length, c.direction = "forward")), t.textContent = c.text, t.appendChild(n(c.prefixP < l.length ? Math.min(b, b + c.prefixP) : Math.min(b, r.length -
 		c.skillP))), setTimeout(i, d)
   }
   var l = "",
 	a = ["嘻嘻嘻嘻(#^.^#)~", "哈哈哈哈O(∩_∩)O哈哈~~", "呜呜呜呜┭┮﹏┭┮~", "啦啦啦啦啦♪(^∇^*)~",
-	  "嗯嗯嗯嗯~\(^o^)/", "嘿嘿嘿嘿嘿~o(*￣︶￣*)o", "么么么么么~(* ￣3)(ε￣ *)"
+	  "耶耶耶耶~\(^o^)/", "嘿嘿嘿嘿嘿~o(*￣︶￣*)o"
 	].map(function(t) {
 	  return t + ""
 	}),
@@ -50,4 +49,4 @@ var drawinput = function(t) {
 	};
   i()
 };
-drawinput(document.getElementById("kawayii"))
+drawinput(document.getElementById("kawayii"));
