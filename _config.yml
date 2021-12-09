@@ -7,7 +7,7 @@ description: 躺平主义者
 # baseurl:  
 url: https://syshaw.github.io
 
-permalink: /:year-:month-/:title
+permalink: /:year-:month-:day/:title
 timezone: Asia/Beijing
 
 favicon: /assets/img/favicon.ico
