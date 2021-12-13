@@ -1,5 +1,5 @@
 
-title: Syshaw
+title: (*^▽^*) Welcome to Syshaw's Blog
 email: 921543103@qq.com 
 description: 躺平主义者
 
@@ -22,8 +22,7 @@ user:
   name: syshaw
   pic: /assets/img/profile.png
   picAlt: "syshaw"
-  job: 业余码农
-  message: 夢よ，さよなら
+  job: 夢よ，さよなら
   aboutme: true
 
 exclude:
