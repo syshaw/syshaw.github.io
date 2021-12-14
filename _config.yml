@@ -12,9 +12,6 @@ timezone: Asia/Beijing
 
 favicon: /assets/img/favicon.ico
 
-google_analytics: UA-135755815-2
-disqus_shortname: starry99
-
 feed:
   path: atom.xml
 

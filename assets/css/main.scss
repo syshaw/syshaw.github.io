@@ -33,7 +33,7 @@
     --footer_font: #858585;
     --footer_font_a: #000;
     --border_radius: 15px;
-
+    --motto_font: #2F4F4F;
 }
 
 @mixin darkMode {
@@ -58,6 +58,7 @@
     --blockquote: #CACCCE;
     --footer_font_a: #d1d1d1;
     --border_radius: 1px;
+    --motto_font: #E6E6FA;
 }
 
 
@@ -356,7 +357,11 @@ img {
     font-size: 0.75em;
     font-weight: 700;
 }
-
+.header_motto {
+    display: block;
+    color: var(--motto_font);
+    font-size: 1em;
+}
 .theme_changer {
     cursor: pointer;
 
