@@ -1,6 +1,6 @@
 ---
 title: 程序signal清单
-categories: [C++]
+categories: [Linux]
 comments: true
 ---
 

@@ -51,7 +51,7 @@ goto data05
 
 **`B`添加`A`信任，方式如下**：
 
-* 将A的 `~/.ssh/id_rsa.pub` 文件中的内容，复制到机器`B`的 `~/.ssh/authorized_keys` 文件中。
+* 将`A`的 `~/.ssh/id_rsa.pub` 文件中的内容，复制到机器`B`的 `~/.ssh/authorized_keys` 文件中。
 * `A`不存在` ~/.ssh/id_rsa.pub` 文件，执行如下命令：
   `cd ~/.ssh/; ssh-keygen -t rsa`（这里需要三次回车）
 * 如果还是需要输入密码，在`B`上执行：`chmod -R 700 ~/.ssh/`
