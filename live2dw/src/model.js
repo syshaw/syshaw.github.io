@@ -29,7 +29,8 @@ class Model {
         showMessage(message, 4000, 10);
         if (this.useCDN) {
             if (!this.modelList) await this.loadModelList();
-            const target = randomSelection(this.modelList.models[modelId]);
+            //const target = this.modelList.models[modelId];
+            const target = "HyperdimensionNeptunia/nepgear";
             loadlive2d("live2d", `${this.cdnPath}model/${target}/index.json`);
         } else {
             loadlive2d("live2d", `${this.apiPath}get/?id=${modelId}-${modelTexturesId}`);
@@ -42,7 +43,8 @@ class Model {
             modelTexturesId = localStorage.getItem("modelTexturesId");
         if (this.useCDN) {
             if (!this.modelList) await this.loadModelList();
-            const target = randomSelection(this.modelList.models[modelId]);
+            //const target = randomSelection(this.modelList.models[modelId]);
+            const target = "HyperdimensionNeptunia/nepgear";
             loadlive2d("live2d", `${this.cdnPath}model/${target}/index.json`);
             showMessage("我的新衣服好看嘛？", 4000, 10);
         } else {
