@@ -117,11 +117,17 @@ body {
     padding: 0;
     background-color: var(--bg_color);
     transition: background-color 0.5s ease;
-    background-size: 100%;
+    /*background-size: 100%;*/
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
-    
+
+    cursor: url("/assets/img/mouse_asuka.ico"),default;
+    background-image: url("/assets/img/joker_asuka.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     @include breakpoint(medium) {
         zoom: 1;
     }
