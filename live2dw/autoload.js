@@ -33,7 +33,7 @@ function loadExternalResource(url, type) {
 		// 配置选项的具体用法见 README.md
 		initWidget({
 			waifuPath: live2d_path + "waifu-tips.json",
-			cdnPath: "https://fastly.jsdelivr.net/gh/syshaw/live2d_api/",
+			cdnPath: live2d_path,
 			tools: []
 		});
 	});

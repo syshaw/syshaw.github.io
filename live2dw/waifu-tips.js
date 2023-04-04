@@ -31,42 +31,9 @@
 			}
 			this.useCDN = s, this.apiPath = t, this.cdnPath = o
 		}
-		async loadModelList() {
-			const e = await fetch(`${this.cdnPath}model_list.json`);
-			this.modelList = await e.json()
-		}
 		async loadModel(t, s, n) {
-			if (localStorage.setItem("modelId", t), localStorage.setItem("modelTexturesId", s), o(n, 4e3, 10), this.useCDN) {
-				this.modelList || await this.loadModelList();
-				//const o = e(this.modelList.models[t]);
-                const o = "HyperdimensionNeptunia/nepgear";
-				loadlive2d("live2d", `${this.cdnPath}model/${o}/index.json`)
-			} else loadlive2d("live2d", `${this.apiPath}get/?id=${t}-${s}`), console.log(`Live2D 模型 ${t}-${s} 加载完成`)
-		}
-		async loadRandModel() {
-			const t = localStorage.getItem("modelId"),
-				s = localStorage.getItem("modelTexturesId");
-			if (this.useCDN) {
-				this.modelList || await this.loadModelList();
-				const s = e(this.modelList.models[t]);
-				loadlive2d("live2d", `${this.cdnPath}model/${s}/index.json`), o("我的新衣服好看嘛？", 4e3, 10)
-			} else fetch(`${this.apiPath}rand_textures/?id=${t}-${s}`)
-				.then((e => e.json()))
-				.then((e => {
-					1 !== e.textures.id || 1 !== s && 0 !== s ? this.loadModel(t, e.textures.id, "我的新衣服好看嘛？") : o("我还没有其他衣服呢！", 4e3, 10)
-				}))
-		}
-		async loadOtherModel() {
-			let e = localStorage.getItem("modelId");
-			if (this.useCDN) {
-				this.modelList || await this.loadModelList();
-				const t = ++e >= this.modelList.models.length ? 0 : e;
-				this.loadModel(t, 0, this.modelList.messages[t])
-			} else fetch(`${this.apiPath}switch/?id=${e}`)
-				.then((e => e.json()))
-				.then((e => {
-					this.loadModel(e.model.id, 0, e.model.message)
-				}))
+            const o = "HyperdimensionNeptunia/nepgear";
+            loadlive2d("live2d", `${this.cdnPath}model/${o}/index.json`)
 		}
 	}
 	const n = {
