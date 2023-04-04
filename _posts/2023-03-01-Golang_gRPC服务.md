@@ -12,19 +12,14 @@ comments: true
 ## demo目录结构
 代码还是模块化好点，目录结构如下：
 > gRPC/
-> > proto/
-> > > service.proto
-
-> > service/
-> > > service.go
-
-> > main_service.go //服务main入口
->
-> > main_client.go  //客户端
+> * proto/service.proto
+> * service/service.go
+> * main_service.go //服务main入口
+> * main_client.go  //客户端
 
 ## 服务端demo
 先定义一个包含服务的pb文件```proto/service.proto```
-```pb
+```go
 syntax = "proto3";
 
 option go_package = ".;grpc_pb";//名称自定义，生成go的必须要包含这个字段
